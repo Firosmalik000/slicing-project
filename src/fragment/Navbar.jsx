@@ -65,15 +65,15 @@ const Navbar = () => {
       </div>
       {/* smartphone */}
       <div className={`w-[300px] min-h-screen fixed bg-orange-600 top-0 right-0 flex flex-col px-4 py-[150px] gap-y-4 justify-start ${open ? 'translate-x-0' : 'translate-x-full'} transition duration-300 text-white text-2xl font-anybody `}>
-        <button>Home</button>
-        <button>Shop</button>
-        <button>LookBook</button>
-        <button>Pages</button>
-        <button>Blog</button>
+        <button className=" hover:-translate-y-2  transition duration-300">Home</button>
+        <button className=" hover:-translate-y-2  transition duration-300">Shop</button>
+        <button className=" hover:-translate-y-2  transition duration-300">LookBook</button>
+        <button className=" hover:-translate-y-2  transition duration-300">Pages</button>
+        <button className=" hover:-translate-y-2  transition duration-300">Blog</button>
         <InputCustom active={active} />
         <div className="mx-auto flex gap-x-4">
-          <FiShoppingBag className="text-5xl" />
-          <RiAccountCircleLine className="text-5xl" />
+          <FiShoppingBag className="text-5xl hover:-translate-y-2  transition duration-300" />
+          <RiAccountCircleLine className="text-5xl hover:-translate-y-2  transition duration-300" />
         </div>
 
         <IoMdClose className="absolute text-4xl right-4 top-4 btn cursor-pointer" onClick={() => handleOpen()} />
