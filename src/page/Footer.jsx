@@ -37,7 +37,7 @@ const Footer = () => {
           <p className=" mb-2 hover:scale-105 cursor-pointer">Size Chart</p>
         </div>
 
-        <div className="mb-8 md:mb-0 w-[150px]">
+        <div className="mb-8 md:mb-0 w-[150px] mx-auto md:mx-0">
           <p className="text-[17px] mb-4 font-amiko ">Useful Links</p>
           <p className=" mb-2 hover:scale-105 cursor-pointer">Our brands</p>
           <p className=" mb-2 hover:scale-105 cursor-pointer">Career</p>
