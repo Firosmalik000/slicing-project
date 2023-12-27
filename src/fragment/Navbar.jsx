@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FiShoppingBag } from 'react-icons/fi';
 import { RiAccountCircleLine } from 'react-icons/ri';
 import { CiMenuBurger } from 'react-icons/ci';
@@ -12,7 +12,7 @@ const InputCustom = (active) => {
         <input type="search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-[30px]     " placeholder="Search " required />
         <button type="submit" className="text-white absolute end-2.5 bottom-2.5  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2">
           <svg className={`w-4 h-4 ${active ? 'text-black' : 'text-gray-400'}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            <path stroke="currentColor" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
           </svg>
         </button>
       </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center mx-auto w-5/6">
         <AnchorLink href={'#hero'}>
           <div>
-            <button className="font-newsreader text-[40px] font-semibold">Bagberry</button>
+            <button className="font-newsreader text-[30px] md:text-[40px] font-semibold">Bagberry</button>
           </div>
         </AnchorLink>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
           <RiAccountCircleLine className="text-5xl cursor-pointer hover:-translate-y-2 transition duration-300" />
         </div>
         <div className="md:hidden flex">
-          <CiMenuBurger className="text-4xl   cursor-pointer" onClick={() => handleOpen()} />
+          <CiMenuBurger className="md:text-4xl text-3xl   cursor-pointer" onClick={() => handleOpen()} />
         </div>
       </div>
       {/* smartphone */}
