@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="relative w-full mb-[100px]" id="hero">
       <img src={hero} alt="" className="min-w-[210vh] min-h-screen" />
-      <div className="absolute top-[500px] md:top-[400px] left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-[400px]  left-1/2 -translate-x-1/2 -translate-y-1/2">
         <h1 className=" text-5xl md:text-8xl text-white text-center mb-5 font-anybody">
           Our timeless bag <br />
           collections

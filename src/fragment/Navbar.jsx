@@ -9,8 +9,8 @@ const InputCustom = (active) => {
   return (
     <form>
       <div className="relative">
-        <input type="search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-[30px]     " placeholder="Search " required />
-        <button type="submit" className="text-white absolute end-2.5 bottom-2.5  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2">
+        <input type="search" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-[30px]     " placeholder="Search " required />
+        <button type="submit" className="text-white absolute end-0.5 bottom-0.5  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2">
           <svg className={`w-4 h-4 ${active ? 'text-black' : 'text-gray-400'}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
             <path stroke="currentColor" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
           </svg>
@@ -39,15 +39,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className={` ${active ? 'shadow-lg bg-white ' : 'text-white border-b border-slate-100'} transition duration-300 py-[35px]  w-full  fixed z-[9999]    `}>
+    <div className={` ${active ? 'shadow-lg bg-white ' : 'text-white border-b border-slate-100'} transition duration-300 py-[30px]  w-full  fixed z-[9999]    `}>
       <div className="flex justify-between items-center mx-auto w-5/6">
         <AnchorLink href={'#hero'}>
           <div>
-            <button className="font-newsreader text-[30px] md:text-[40px] font-semibold">Bagberry</button>
+            <button className="font-newsreader text-[30px]  font-semibold">Bagberry</button>
           </div>
         </AnchorLink>
 
-        <div className={`md:flex gap-[30px] font-anybody text-xl font-semibold hidden text-center gap-x-[60px]`}>
+        <div className={`md:flex gap-[30px] font-anybody  font-semibold hidden text-center gap-x-[60px]`}>
           <button className=" hover:-translate-y-2  transition duration-300">Home</button>
           <button className=" hover:-translate-y-2  transition duration-300">Shop</button>
           <button className=" hover:-translate-y-2  transition duration-300">LookBook</button>
@@ -56,8 +56,8 @@ const Navbar = () => {
         </div>
         <div className={`md:flex gap-4  hidden`}>
           <InputCustom active={active} />
-          <FiShoppingBag className="text-5xl cursor-pointer hover:-translate-y-2 transition duration-300" />
-          <RiAccountCircleLine className="text-5xl cursor-pointer hover:-translate-y-2 transition duration-300" />
+          <FiShoppingBag className="text-3xl cursor-pointer hover:-translate-y-2 transition duration-300" />
+          <RiAccountCircleLine className="text-3xl cursor-pointer hover:-translate-y-2 transition duration-300" />
         </div>
         <div className="md:hidden flex">
           <CiMenuBurger className="md:text-4xl text-3xl   cursor-pointer" onClick={() => handleOpen()} />

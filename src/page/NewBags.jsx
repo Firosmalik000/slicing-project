@@ -1,4 +1,3 @@
-import React from 'react';
 import image12 from '../assets/44 1.png';
 import image134 from '../assets/44 2.png';
 import image133 from '../assets/44 3.png';
@@ -6,7 +5,7 @@ import image132 from '../assets/44 4.png';
 
 const Bag = ({ src, title, price }) => {
   return (
-    <div className=" my-5    relative hover:scale-105  transition duration-300  ">
+    <div className=" my-5    relative hover:scale-105  transition duration-300 md:w-[300px] w-[350px] md:mx-0 mx-auto  ">
       <img src={src} alt="" className="  hover:shadow-2xl w-full" />
       <div className="absolute flex justify-between mx-8 w-5/6 bottom-5  ">
         <p className="font-amiko text-[16px] w-[60%]">{title}</p>
@@ -22,8 +21,8 @@ const NewBag = () => {
   return (
     <section className="relative  py-[81px]">
       <div className="flex justify-between">
-        <h1 className="text-[25px] font-amiko  ">New bags for all your occasions</h1>
-        <p className="font-amiko text-[16px]">Explore all bags</p>
+        <h1 className="md:text-[25px] text-[20px] font-amiko  ">New bags for all your occasions</h1>
+        <p className="font-amiko md:text-[16px] text-[14px]">Explore all bags</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-y-3 sm:gap-y-3 xs:gap-y-3 mx-auto  ">
         <Bag src={image12} title={'Large Webbing Purse'} price={'$89.00'} />

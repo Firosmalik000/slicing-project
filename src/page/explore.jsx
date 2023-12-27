@@ -5,7 +5,7 @@ import img13 from '../assets/3 13.png';
 
 const Card = ({ src, title, subTitle }) => {
   return (
-    <div className="md:w-[520px] hover:shadow-2xl relative hover:scale-105 transition-all duration-300">
+    <div className="md:w-[420px] hover:shadow-2xl relative hover:scale-105 transition-all duration-300">
       <img src={src} alt="" className="w-full h-full" />
       <div className="absolute bottom-5 left-5 ">
         <p className="font-amiko text-[20px]">{title}</p>
